@@ -1,15 +1,15 @@
 with model_a as
   (select * exclude unqiue_key,
             unqiue_key as model_a_unqiue_key
-   from {{ ref('int__finance_model_nine_hundred_and_thirty_five') }}),
+   from {{ ref('int__revenue_model_one_thousand,_two_hundred_and_seventy_one') }}),
      model_b as
   (select * exclude unqiue_key,
             unqiue_key as model_b_unqiue_key
-   from {{ ref('stg__contacts') }}),
+   from {{ ref('stg__sample_salesforce_data_contacts') }}),
      model_c as
   (select * exclude unqiue_key,
             unqiue_key as model_c_unqiue_key
-   from {{ ref('int__revenue_model_five_hundred_and_fifty_four') }}),
+   from {{ ref('int__revenue_model_one_hundred_and_eighty_six') }}),
      joined_models as
   (select a.*,
           b.*,
