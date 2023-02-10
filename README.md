@@ -8,7 +8,7 @@
     - 27 sources
 - **Models**
     - _Staging_
-        - 28 models
+        - 44 models
     - _Intermediate Models_
         - 6003 models
     - _Core Reporting Models_
@@ -21,4 +21,18 @@
 ### Total Models in Project: 7034
 
 
-15k
+File count: ../models/staging/jaffle_shop 5
+File count: ../models/staging/medicare_sample_data 11
+File count: ../models/staging/sample_customer_data 3
+File count: ../models/staging/sample_salesforce_data 9
+File count: ../models/staging/stripe 2
+File count: ../models/staging/subscription_data 5
+File count: ../models/staging/tpch_data 9
+
+File count: ../models/intermediate_models/finance 2001
+File count: ../models/intermediate_models/marketing 2001
+File count: ../models/intermediate_models/revenue 2001
+File count: ../models/core_reporting_models 4001
+File count: ../models/roll_up_models 2501
+File count: ../models/dashboard_connected_models 2501
+Total Models: 15050
