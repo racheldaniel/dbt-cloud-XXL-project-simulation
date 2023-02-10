@@ -1,3 +1,7 @@
+There are 1 unused configuration paths:
+- models.large_project_simulation
+
+[0m17:00:56  
 
 with source as (
 
@@ -8,17 +12,6 @@ with source as (
 renamed as (
 
     select
-        batchid,
-        first_name,
-        last_name,
-        email,
-        company,
-        lead_status,
-        leadid,
-        contactid,
-        datecreated,
-        modifieddate,
-        row_number() over (partition by 1 order by 1) as unqiue_key
 
     from source
 

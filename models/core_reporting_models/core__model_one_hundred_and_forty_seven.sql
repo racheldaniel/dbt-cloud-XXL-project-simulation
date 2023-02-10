@@ -1,15 +1,15 @@
 with model_a as
   (select * exclude unqiue_key,
             unqiue_key as model_a_unqiue_key
-   from {{ ref('int__finance_model_eight_hundred_and_one') }}),
+   from {{ ref('int__finance_model_one_thousand_and_forty_nine') }}),
      model_b as
   (select * exclude unqiue_key,
             unqiue_key as model_b_unqiue_key
-   from {{ ref('stg__medicare_sample_data_2009_beneficiary_summary_file_sample') }}),
+   from {{ ref('stg__medicare_sample_data_2010_beneficiary_summary_file_sample') }}),
      model_c as
   (select * exclude unqiue_key,
             unqiue_key as model_c_unqiue_key
-   from {{ ref('int__finance_model_four') }}),
+   from {{ ref('int__finance_model_one_thousand,_six_hundred_and_twenty_eight') }}),
      joined_models as
   (select a.*,
           b.*,

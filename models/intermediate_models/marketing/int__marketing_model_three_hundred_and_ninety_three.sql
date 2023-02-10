@@ -5,7 +5,7 @@ with model_a as
      model_b as
   (select * exclude unqiue_key,
             unqiue_key as model_b_unqiue_key
-   from {{ ref('stg__medicare_sample_data_2008_to_2010_inpatient_claims_sample') }}),
+   from {{ ref('stg__subscription_data_account') }}),
      joined_models as
   (select a.*,
           b.*

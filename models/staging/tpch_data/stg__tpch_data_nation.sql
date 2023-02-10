@@ -1,3 +1,7 @@
+There are 1 unused configuration paths:
+- models.large_project_simulation
+
+[0m17:01:39  
 
 with source as (
 
@@ -8,11 +12,6 @@ with source as (
 renamed as (
 
     select
-        n_nationkey,
-        n_name,
-        n_regionkey,
-        n_comment,
-        row_number() over (partition by 1 order by 1) as unqiue_key
 
     from source
 

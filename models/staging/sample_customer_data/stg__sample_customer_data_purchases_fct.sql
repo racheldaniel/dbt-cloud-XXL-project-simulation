@@ -1,3 +1,7 @@
+There are 1 unused configuration paths:
+- models.large_project_simulation
+
+[0m17:00:39  
 
 with source as (
 
@@ -8,10 +12,6 @@ with source as (
 renamed as (
 
     select
-        id,
-        customer_id,
-        amount,
-        row_number() over (partition by 1 order by 1) as unqiue_key
 
     from source
 

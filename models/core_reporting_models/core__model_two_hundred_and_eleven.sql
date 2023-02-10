@@ -1,15 +1,15 @@
 with model_a as
   (select * exclude unqiue_key,
             unqiue_key as model_a_unqiue_key
-   from {{ ref('int__marketing_model_one_hundred_and_fifty_six') }}),
+   from {{ ref('int__finance_model_six_hundred_and_sixty_five') }}),
      model_b as
   (select * exclude unqiue_key,
             unqiue_key as model_b_unqiue_key
-   from {{ ref('stg__tpch_data_part') }}),
+   from {{ ref('stg__jaffle_shop_dim_customers') }}),
      model_c as
   (select * exclude unqiue_key,
             unqiue_key as model_c_unqiue_key
-   from {{ ref('int__revenue_model_eight_hundred_and_seven') }}),
+   from {{ ref('int__finance_model_one_thousand,_eight_hundred_and_fifty_one') }}),
      joined_models as
   (select a.*,
           b.*,
