@@ -1,11 +1,11 @@
 with model_a as
   (select * exclude unqiue_key,
             unqiue_key as model_a_unqiue_key
-   from {{ ref('core__model_five_hundred_and_seventy_seven') }}),
+   from {{ ref('core__model_two_thousand,_eight_hundred_and_four') }}),
      model_b as
   (select * exclude unqiue_key,
             unqiue_key as model_b_unqiue_key
-   from {{ ref('rollup__model_one_thousand,_six_hundred_and_sixty_seven') }}),
+   from {{ ref('rollup__model_six_hundred_and_eighty_three') }}),
      joined_models as
   (select a.*,
           b.*
