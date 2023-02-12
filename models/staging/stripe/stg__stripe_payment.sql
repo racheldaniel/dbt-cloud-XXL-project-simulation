@@ -1,21 +1,2 @@
-There are 1 unused configuration paths:
-- models.large_project_simulation
-
-[0m17:01:06  
-
-with source as (
-
-    select * from {{ source('stripe', 'payment') }}
-
-),
-
-renamed as (
-
-    select
-
-    from source
-
-)
-
-select * from renamed
-
+Compilation Error in model core__model_three_thousand_and_thirteen (models/core_reporting_models/core__model_three_thousand_and_thirteen.sql)
+  Model 'model.xtra_large_project_simulation.core__model_three_thousand_and_thirteen' (models/core_reporting_models/core__model_three_thousand_and_thirteen.sql) depends on a node named 'stg__opportunites' which was not found

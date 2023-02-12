@@ -1,0 +1,2 @@
+Compilation Error in model core__model_one_thousand_seven_hundred_and_twenty (models/core_reporting_models/core__model_one_thousand_seven_hundred_and_twenty.sql)
+  Model 'model.xtra_large_project_simulation.core__model_one_thousand_seven_hundred_and_twenty' (models/core_reporting_models/core__model_one_thousand_seven_hundred_and_twenty.sql) depends on a node named 'stg__leads' which was not found

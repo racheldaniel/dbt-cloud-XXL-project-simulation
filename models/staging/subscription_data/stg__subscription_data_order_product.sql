@@ -1,21 +1,2 @@
-There are 1 unused configuration paths:
-- models.large_project_simulation
-
-[0m17:01:20  
-
-with source as (
-
-    select * from {{ source('subscription_data', 'order_product') }}
-
-),
-
-renamed as (
-
-    select
-
-    from source
-
-)
-
-select * from renamed
-
+Compilation Error in model core__model_one_thousand_two_hundred_and_ninety (models/core_reporting_models/core__model_one_thousand_two_hundred_and_ninety.sql)
+  Model 'model.xtra_large_project_simulation.core__model_one_thousand_two_hundred_and_ninety' (models/core_reporting_models/core__model_one_thousand_two_hundred_and_ninety.sql) depends on a node named 'stg__contacts' which was not found

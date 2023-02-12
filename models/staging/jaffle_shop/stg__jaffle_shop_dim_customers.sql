@@ -1,21 +1,2 @@
-There are 1 unused configuration paths:
-- models.large_project_simulation
-
-[0m16:59:51  
-
-with source as (
-
-    select * from {{ source('jaffle_shop', 'dim_customers') }}
-
-),
-
-renamed as (
-
-    select
-
-    from source
-
-)
-
-select * from renamed
-
+Compilation Error in model core__model_eight_hundred_and_fifty_two (models/core_reporting_models/core__model_eight_hundred_and_fifty_two.sql)
+  Model 'model.xtra_large_project_simulation.core__model_eight_hundred_and_fifty_two' (models/core_reporting_models/core__model_eight_hundred_and_fifty_two.sql) depends on a node named 'stg__opportunites' which was not found

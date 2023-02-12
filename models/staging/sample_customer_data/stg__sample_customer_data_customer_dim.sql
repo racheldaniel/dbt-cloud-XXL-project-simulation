@@ -1,21 +1,2 @@
-There are 1 unused configuration paths:
-- models.large_project_simulation
-
-[0m17:00:34  
-
-with source as (
-
-    select * from {{ source('sample_customer_data', 'customer_dim') }}
-
-),
-
-renamed as (
-
-    select
-
-    from source
-
-)
-
-select * from renamed
-
+Compilation Error in model core__model_three_hundred_and_thirty_seven (models/core_reporting_models/core__model_three_hundred_and_thirty_seven.sql)
+  Model 'model.xtra_large_project_simulation.core__model_three_hundred_and_thirty_seven' (models/core_reporting_models/core__model_three_hundred_and_thirty_seven.sql) depends on a node named 'stg__contacts' which was not found

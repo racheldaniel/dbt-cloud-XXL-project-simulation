@@ -18,4 +18,4 @@
     - _Dashboard Connected Models_
         - 2501 models
 
-### Total Models in Project: 7034
+### Total Models in Project: 15,045

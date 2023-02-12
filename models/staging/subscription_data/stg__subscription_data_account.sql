@@ -1,21 +1,2 @@
-There are 1 unused configuration paths:
-- models.large_project_simulation
-
-[0m17:01:10  
-
-with source as (
-
-    select * from {{ source('subscription_data', 'account') }}
-
-),
-
-renamed as (
-
-    select
-
-    from source
-
-)
-
-select * from renamed
-
+Compilation Error in model core__model_seven_hundred_and_sixty_seven (models/core_reporting_models/core__model_seven_hundred_and_sixty_seven.sql)
+  Model 'model.xtra_large_project_simulation.core__model_seven_hundred_and_sixty_seven' (models/core_reporting_models/core__model_seven_hundred_and_sixty_seven.sql) depends on a node named 'stg__leads' which was not found
