@@ -8,7 +8,7 @@
     - 27 sources
 - **Models**
     - _Staging_
-        - 39 models
+        - 27 models
     - _Intermediate Models_
         - 6003 models
     - _Core Reporting Models_
@@ -18,4 +18,4 @@
     - _Dashboard Connected Models_
         - 2501 models
 
-### Total Models in Project: 15,045
+### Total Models in Project: 15,040
