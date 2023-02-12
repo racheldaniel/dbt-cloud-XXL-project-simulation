@@ -1,8 +1,3 @@
-There are 1 unused configuration paths:
-- models.large_project_simulation
-
-[0m17:01:25  
-
 with source as (
 
     select * from {{ source('subscription_data', 'product') }}
@@ -12,6 +7,15 @@ with source as (
 renamed as (
 
     select
+        id,
+        name,
+        unit,
+        unit_rate,
+        type,
+        unit_timing,
+        status,
+        deleted_at,
+        _loaded_at
 
     from source
 

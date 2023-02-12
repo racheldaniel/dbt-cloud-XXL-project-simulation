@@ -1,8 +1,3 @@
-There are 1 unused configuration paths:
-- models.large_project_simulation
-
-[0m17:02:00  
-
 with source as (
 
     select * from {{ source('tpch_data', 'region') }}
@@ -12,6 +7,9 @@ with source as (
 renamed as (
 
     select
+        r_regionkey,
+        r_name,
+        r_comment
 
     from source
 

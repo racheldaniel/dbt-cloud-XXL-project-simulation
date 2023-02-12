@@ -1,2 +1,28 @@
-Compilation Error in model core__model_two_hundred_and_ninety (models/core_reporting_models/core__model_two_hundred_and_ninety.sql)
-  Model 'model.xtra_large_project_simulation.core__model_two_hundred_and_ninety' (models/core_reporting_models/core__model_two_hundred_and_ninety.sql) depends on a node named 'stg__leads' which was not found
+with source as (
+
+    select * from {{ source('sample_salesforce_data', 'opportunites') }}
+
+),
+
+renamed as (
+
+    select
+        batchid,
+        companextid,
+        amount,
+        project_name,
+        oppurtunity_name,
+        stage,
+        close_date,
+        createddate,
+        modifieddate,
+        rand_number,
+        oppurtunityid,
+        datecreated
+
+    from source
+
+)
+
+select * from renamed
+

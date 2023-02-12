@@ -1,2 +1,33 @@
-Compilation Error in model core__model_three_hundred_and_thirty_seven (models/core_reporting_models/core__model_three_hundred_and_thirty_seven.sql)
-  Model 'model.xtra_large_project_simulation.core__model_three_hundred_and_thirty_seven' (models/core_reporting_models/core__model_three_hundred_and_thirty_seven.sql) depends on a node named 'stg__contacts' which was not found
+with source as (
+
+    select * from {{ source('sample_customer_data', 'customer_dim') }}
+
+),
+
+renamed as (
+
+    select
+        id,
+        gender,
+        birthdate,
+        maiden_name,
+        lname,
+        fname,
+        address,
+        city,
+        state,
+        zip,
+        phone,
+        email,
+        cc_type,
+        cc_number,
+        cc_cvc,
+        cc_expiredate,
+        customer_join_date
+
+    from source
+
+)
+
+select * from renamed
+

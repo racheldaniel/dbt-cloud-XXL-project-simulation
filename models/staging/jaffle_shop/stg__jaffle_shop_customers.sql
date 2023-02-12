@@ -1,2 +1,19 @@
-Compilation Error in model core__model_two_thousand_one_hundred_and_sixty_six (models/core_reporting_models/core__model_two_thousand_one_hundred_and_sixty_six.sql)
-  Model 'model.xtra_large_project_simulation.core__model_two_thousand_one_hundred_and_sixty_six' (models/core_reporting_models/core__model_two_thousand_one_hundred_and_sixty_six.sql) depends on a node named 'stg__opportunites' which was not found
+with source as (
+
+    select * from {{ source('jaffle_shop', 'customers') }}
+
+),
+
+renamed as (
+
+    select
+        id,
+        first_name,
+        last_name
+
+    from source
+
+)
+
+select * from renamed
+

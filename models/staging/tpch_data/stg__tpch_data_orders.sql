@@ -1,8 +1,3 @@
-There are 1 unused configuration paths:
-- models.large_project_simulation
-
-[0m17:01:44  
-
 with source as (
 
     select * from {{ source('tpch_data', 'orders') }}
@@ -12,6 +7,15 @@ with source as (
 renamed as (
 
     select
+        o_orderkey,
+        o_custkey,
+        o_orderstatus,
+        o_totalprice,
+        o_orderdate,
+        o_orderpriority,
+        o_clerk,
+        o_shippriority,
+        o_comment
 
     from source
 

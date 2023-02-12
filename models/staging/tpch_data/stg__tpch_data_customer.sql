@@ -1,8 +1,3 @@
-There are 1 unused configuration paths:
-- models.large_project_simulation
-
-[0m17:01:30  
-
 with source as (
 
     select * from {{ source('tpch_data', 'customer') }}
@@ -12,6 +7,14 @@ with source as (
 renamed as (
 
     select
+        c_custkey,
+        c_name,
+        c_address,
+        c_nationkey,
+        c_phone,
+        c_acctbal,
+        c_mktsegment,
+        c_comment
 
     from source
 

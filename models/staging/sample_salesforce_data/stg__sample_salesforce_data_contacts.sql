@@ -1,2 +1,25 @@
-Compilation Error in model core__model_four_hundred_and_eighty_eight (models/core_reporting_models/core__model_four_hundred_and_eighty_eight.sql)
-  Model 'model.xtra_large_project_simulation.core__model_four_hundred_and_eighty_eight' (models/core_reporting_models/core__model_four_hundred_and_eighty_eight.sql) depends on a node named 'stg__contacts' which was not found
+with source as (
+
+    select * from {{ source('sample_salesforce_data', 'contacts') }}
+
+),
+
+renamed as (
+
+    select
+        batchid,
+        companyextid,
+        first_name,
+        last_name,
+        email,
+        country,
+        contactid,
+        datecreated,
+        modifieddate
+
+    from source
+
+)
+
+select * from renamed
+

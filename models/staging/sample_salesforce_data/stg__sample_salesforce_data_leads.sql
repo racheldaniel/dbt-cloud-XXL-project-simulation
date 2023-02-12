@@ -1,2 +1,26 @@
-Compilation Error in model core__model_two_thousand_six_hundred_and_ninety_three (models/core_reporting_models/core__model_two_thousand_six_hundred_and_ninety_three.sql)
-  Model 'model.xtra_large_project_simulation.core__model_two_thousand_six_hundred_and_ninety_three' (models/core_reporting_models/core__model_two_thousand_six_hundred_and_ninety_three.sql) depends on a node named 'stg__leads' which was not found
+with source as (
+
+    select * from {{ source('sample_salesforce_data', 'leads') }}
+
+),
+
+renamed as (
+
+    select
+        batchid,
+        first_name,
+        last_name,
+        email,
+        company,
+        lead_status,
+        leadid,
+        contactid,
+        datecreated,
+        modifieddate
+
+    from source
+
+)
+
+select * from renamed
+

@@ -1,2 +1,0 @@
-Compilation Error in model core__model_three_thousand_one_hundred_and_thirty_four (models/core_reporting_models/core__model_three_thousand_one_hundred_and_thirty_four.sql)
-  Model 'model.xtra_large_project_simulation.core__model_three_thousand_one_hundred_and_thirty_four' (models/core_reporting_models/core__model_three_thousand_one_hundred_and_thirty_four.sql) depends on a node named 'stg__opportunites' which was not found
